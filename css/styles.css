@@ -1,0 +1,183 @@
+/*Colors subject to change, probably will*/
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+/*Global*/
+
+body {font-family: 'Ubuntu', sans-serif;
+font-weight: 300; 
+color: #555;
+
+
+}
+a {
+	color: #c1c1c1;
+}
+
+a:hover {
+	text-decoration: none; 
+}
+
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: auto;
+}
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 40px;
+	min-height: 175px;
+}
+
+.col-narrow {
+	width: 30%;
+	float: left;
+	min-height: 175px;
+
+}
+
+/*Header*/
+
+header, footer {
+	background: #1a1423;
+	color: #eacdc2;
+}
+
+.profile-img {
+	border-radius: 50%;
+	float: center;
+	max-width: 30%;
+
+
+}
+
+h1, h2 {
+	font-family: 'Dancing Script', cursive;
+	line-height: 50%;
+	text-align: center;
+	text-transform: lowercase;
+
+
+}
+
+header h1, header h2 {
+	margin: 40px;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+
+/* Nav */
+
+nav {
+	text-align: center;
+	background: #8D99AE;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.btn {
+	text-decoration: none;
+	background: #8D99AE;
+	color: black;
+	padding: 10px;
+	display: inline-block;
+}
+
+
+/*Footer*/
+
+footer {
+	text-align: center;
+}
+
+/*Skills*/
+/*.skills {
+	background: #8D99AE;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+*/
+
+/*Work*/
+.work {
+	background: #774c60;
+	color: #eacdc2;
+
+}
+
+/*Education*/
+
+.education {
+	background: #372549;
+	color: #eacdc2;
+}
+
+.education {
+	background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+            url(../images/indianhills.jpg) no-repeat fixed;
+    background-size: cover;
+
+h3 ~ p {
+	margin: 0;
+}
+
+.test p:first-of-type {
+	color: #000000;
+	font-size: 25px;
+	font-variant: small-caps;
+}
+
+.type p:first-letter {
+	/*color: #fff;*/
+	font-size: 150%;
+}
+
+@media print {
+
+body {
+	margin: 0;
+	color: white;
+	background: black;
+}
+
+nav {
+	display: none;
+}
+
+.profile-img {
+	display: none;
+}
+
+.btn {
+	display: none;
+}
+
+}
